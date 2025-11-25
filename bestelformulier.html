@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bestelformulier | FUIFNAAM</title>
+    <link rel="stylesheet" href="style.css"> 
+</head>
+<body>
+
+    <header class="hero">
+        <h1>BESTELFORMULIER</h1>
+        <p class="subtitle">Vul je gegevens in om de aankoop af te ronden.</p>
+    </header>
+
+    <main>
+        
+        <section class="details-card">
+            <h2>Bevestig je Bestelling</h2>
+            <p>Je bestelt **1 Standaard Ticket** voor **€ 2,00**.</p>
+            
+            <form action="#" method="POST">
+                
+                <div class="form-group">
+                    <label for="aantal">Aantal Tickets:</label>
+                    <input type="number" id="aantal" name="aantal" min="1" max="10" value="1" required> 
+                </div>
+                
+                <div class="form-group">
+                    <label for="naam">Volledige Naam:</label>
+                    <input type="text" id="naam" name="naam" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="email">E-mailadres (Hier ontvang je je ticket):</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="telefoon">Telefoonnummer (Optioneel):</label>
+                    <input type="tel" id="telefoon" name="telefoon">
+                </div>
+
+                <div class="opmerking">
+                    <p>⚠️ **BELANGRIJK:** Dit is een simulatie. Voor een echte betaling moet je een link naar een externe dienst (zoals een **Payconiq link**, **Tikkie**, of **Eventbrite**) invoegen.</p>
+                </div>
+
+                <a href="LINK_NAAR_PAYCONIQ_OF_TICKETINGSYSTEEM_HIER" target="_blank" class="button">
+                    GA DOOR NAAR BETALING (€ 2,00)
+                </a>
+            </form>
+
+            <a href="tickets.html" class="back-link">⬅️ Terug naar Ticket Selectie</a>
+
+        </section>
+
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Fuifnaam. Beveiligde Betaling.</p>
+    </footer>
+
+</body>
+</html>

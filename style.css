@@ -1,0 +1,253 @@
+/* Globale Stijlen voor de hele pagina */
+body {
+    font-family: sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #0e0e0e; /* Donkere achtergrond */
+    color: #ffffff; /* Witte tekst */
+    line-height: 1.6;
+}
+
+/* De Grote Banner (Hero) bovenaan */
+.hero {
+    background-color: #ff007f; /* Felle accentkleur (felroze) */
+    padding: 60px 20px;
+    text-align: center;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+}
+
+.hero h1 {
+    font-size: 2.5em;
+    margin-bottom: 5px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.hero .subtitle {
+    font-size: 1.2em;
+    opacity: 0.8;
+}
+
+/* Content gebied */
+main {
+    max-width: 800px;
+    margin: 30px auto;
+    padding: 0 20px;
+}
+
+/* Stijl voor alle info kaarten */
+section {
+    background-color: #1a1a1a;
+    padding: 25px;
+    margin-bottom: 25px;
+    border-radius: 10px;
+    border-left: 5px solid #00ffff; /* Neongroen randje voor accent */
+}
+
+h2 {
+    color: #00ffff; /* Neongroen kleur voor titels */
+    border-bottom: 2px solid #333;
+    padding-bottom: 10px;
+    margin-top: 0;
+}
+
+/* Detail items (Datum, Tijd, Locatie) */
+.info-item {
+    display: flex;
+    justify-content: space-between;
+    padding: 8px 0;
+    border-bottom: 1px dashed #333;
+}
+.info-item p:first-child {
+    font-weight: bold;
+}
+.info-item:last-child {
+    border-bottom: none;
+}
+
+/* Line-up lijst */
+.lineup-card ul {
+    list-style: none;
+    padding: 0;
+}
+
+.lineup-card li {
+    padding: 5px 0;
+}
+
+/* De knop voor tickets (en betaling) */
+.button {
+    display: block;
+    background-color: #ff007f;
+    color: white;
+    text-align: center;
+    padding: 15px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    font-size: 1.1em;
+    margin-top: 20px;
+    transition: background-color 0.3s;
+}
+
+.button:hover {
+    background-color: #e00071;
+}
+
+.instagram-link {
+    color: #00ffff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* Footer (Onderaan de pagina) */
+footer {
+    text-align: center;
+    padding: 20px;
+    font-size: 0.8em;
+    background-color: #050505;
+    border-top: 1px solid #333;
+}
+
+/* --- STIJLEN VOOR DE AFTELKLOK (COUNTDOWN) --- */
+
+.countdown-section {
+    text-align: center;
+    padding: 30px 20px;
+    background-color: #1a1a1a;
+    border-bottom: 5px solid #ff007f; /* Accentkleur */
+    margin-bottom: 25px;
+}
+
+.countdown-section h2 {
+    color: #ffffff;
+    border-bottom: none;
+    font-size: 1.5em;
+    padding-bottom: 0;
+}
+
+.timer-display {
+    font-size: 2.5em;
+    font-weight: bold;
+    color: #00ffff; /* Neon kleur */
+    margin-top: 15px;
+}
+
+/* Container om het nummer en de label te groeperen en naast elkaar te zetten */
+.time-block {
+    display: inline-block; /* Zorgt dat de blokken (Dagen, Uren, etc.) naast elkaar staan */
+    text-align: center; /* Centreert de inhoud van elk blok */
+    margin: 0 10px; /* Ruimte tussen de blokken */
+    vertical-align: top; /* Zorgt dat ze netjes uitgelijnd zijn bovenaan */
+}
+
+.time-unit {
+    display: block; /* Zorgt dat het nummer een eigen lijn binnen de time-block krijgt */
+    background-color: #333;
+    padding: 10px 15px;
+    border-radius: 5px;
+    margin-bottom: 5px; /* Ruimte onder het nummer */
+    min-width: 60px; /* Voldoende breedte voor 3 cijfers */
+    font-size: 1em;
+}
+
+.label {
+    display: block; /* Zorgt dat de label onder het nummer staat */
+    font-size: 0.35em; /* Kleiner lettertype voor de label */
+    font-weight: normal;
+    color: #ccc;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+
+/* --- STIJLEN VOOR TICKETPAGINA EN FORMULIER --- */
+
+/* Stijl voor individuele ticketopties */
+.ticket-option {
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    border: 2px solid #333;
+}
+
+/* Beschikbaar tickettype highlighten */
+.ticket-option.available {
+    border-color: #00ffff;
+    background-color: #1f1f1f;
+}
+
+.ticket-option h3 {
+    color: #ffffff;
+    margin-top: 0;
+}
+
+.ticket-option .price {
+    font-size: 1.8em;
+    font-weight: bold;
+    color: #ff007f;
+    margin: 10px 0;
+}
+
+/* Status tekst (Beschikbaar / Uitverkocht) */
+.ticket-option .status {
+    font-weight: bold;
+    font-size: 0.9em;
+    padding: 5px 0;
+}
+
+/* Stijlen voor het Formulier */
+.form-group {
+    margin-bottom: 15px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: #00ffff;
+}
+
+.form-group input[type="text"],
+.form-group input[type="email"],
+.form-group input[type="number"],
+.form-group input[type="tel"] {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #333;
+    background-color: #0e0e0e;
+    color: #ffffff;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+/* Zorg dat de knop in het formulier dezelfde stijl heeft als de ticketknop */
+#buy-form .button {
+    margin-top: 25px;
+}
+
+/* Link om terug te gaan */
+.back-link {
+    display: inline-block;
+    color: #ffffff;
+    font-size: 0.9em;
+    margin-top: 10px;
+}
+
+.opmerking {
+    padding: 10px;
+    background-color: #331010;
+    border-left: 3px solid red;
+    margin-bottom: 15px;
+    font-size: 0.9em;
+}
+
+/* Media Query (Mobielvriendelijk) */
+@media (max-width: 600px) {
+    .timer-display {
+        font-size: 1.5em; /* Iets kleiner voor mobiel */
+    }
+    .time-block {
+        margin: 0 5px;
+    }
+}
