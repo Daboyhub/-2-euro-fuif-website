@@ -2,7 +2,7 @@
 
 // Stel hier de datum en tijd van je fuif in!
 // De fuif start op 20 maart 2026 om 21:00:00.
-const fuifDatum = new Date("March 20, 2026 21:00:00").getTime();
+const fuifDatum = new Date("May 2, 2026 21:00:00").getTime();
 
 // Haal het HTML-element op waar de klok moet verschijnen
 const countdownElement = document.getElementById("countdown");
@@ -36,4 +36,5 @@ const x = setInterval(function() {
     countdownElement.style.color = "#ff007f";
     countdownElement.style.fontSize = "2em";
   }
+
 }, 1000); // 1000ms = 1 seconde 
