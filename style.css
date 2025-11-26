@@ -250,4 +250,9 @@ footer {
     .time-block {
         margin: 0 5px;
     }
+
+}
+.social-section {
+    position: relative;
+    z-index: 10;
 }
